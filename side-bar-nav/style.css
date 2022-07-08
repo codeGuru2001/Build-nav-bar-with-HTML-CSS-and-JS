@@ -1,0 +1,67 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#side-bar{
+    height: 100vh;
+    width: 20vw;
+    float: left;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transition: 1s;
+}
+
+.navbar{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.navbar-brand{
+    color: white;
+}
+
+#control{
+    float: right;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(252,176,69,1);
+    border: white solid 3px;
+}
+
+#side-bar ul {
+    list-style: none;
+}
+
+#side-bar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#options li{
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+#options li:hover{
+    margin-left: 20px;
+}
+
+#social{
+    margin-top: 100px;
+}
+
+#social li{
+display: inline-block;
+margin: 10px;
+}
+
+#log-in{
+    margin-top: 100px;
+}
+
+#log-in li{
+    display: inline-block;
+    margin: 10px;
+}
+

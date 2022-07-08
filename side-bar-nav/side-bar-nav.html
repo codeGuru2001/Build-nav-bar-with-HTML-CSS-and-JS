@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Side bar nav tutorial</title>
+</head>
+<body>
+
+
+
+<!-- As a heading -->
+<nav class="navbar">
+  <div class="container-fluid">
+    <span class="navbar-brand">Navbar</span>
+    <button onclick="display()" id="control">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+</nav>
+
+  <div id="side-bar">
+
+    <div id="inner-div">
+
+    <ul id="options">
+      <li><a href="">Home</a></li>
+      <li><a href="">Vision</a></li>
+      <li><a href="">Mission</a></li>
+      <li><a href="">Advertisement</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <ul id="social">
+      <li><a href=""><i class="bi bi-facebook"></i></a></li>
+      <li><a href=""><i class="bi bi-twitter"></i></a></li>
+      <li><a href=""><i class="bi bi-youtube"></i></a></li>
+    </ul>
+
+    <ul id="log-in">
+      <li><button type="button" class="btn btn-dark">Log in</button></li>
+      <li><button type="button" class="btn btn-dark">Sign up</button></li>
+    </ul>
+
+  </div>
+
+  </div>
+
+
+  <script>
+    let sideBar1 = document.getElementById('side-bar');
+    let innerDiv1 = document.getElementById('inner-div');
+
+    sideBar1.style.width='0vw';
+    innerDiv1.style.display= 'none';
+
+    function display(){
+      if(sideBar1.style.width=='0vw'){
+        sideBar1.style.width='20vw',
+        setTimeout(function displayInnerDiv(){
+          innerDiv1.style.display= 'block'
+        },1100)
+      }
+      else(sideBar1.style.width='0vw',innerDiv1.style.display= 'none')
+    }
+  </script>
+  
+</body>
+
+
+</html>
